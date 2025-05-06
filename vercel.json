@@ -11,9 +11,5 @@
     "src": "/(.*)",
     "dest": "base.js"
     }
-    ],
-    "env": {
-    "DATABASE_URL": "@database_url",
-    "API_KEY": "@api_key"
-    }
+    ] 
 }
