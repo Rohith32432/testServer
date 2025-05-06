@@ -2,7 +2,7 @@ import  express from 'express'
 import { log } from './Logs/logger.js'
 
 const app=express()
-
+app.set('trust proxy', true); // Add this line
 app.get('/',(req,res)=>{
     const {ip,method,originalUrl}=req
     const date=new Date().toLocaleDateString()
