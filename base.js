@@ -16,7 +16,7 @@ app.get('/x',(req,res)=>{
     const date=new Date().toLocaleDateString()
     const currlog = `[${method}] ${originalUrl} "${ip}"  ${date}   \n`;
     log(currlog)
-    res.json('hi')
+    res.json(currlog)
 })
 
 app.listen(3000,()=>{
